@@ -1,33 +1,36 @@
 const config = {
   'production': {
     RPC_NODES : [
+      'http://192.168.56.2:8079',
       'https://api.eftg.eu',
       'https://rpc-italy.eftg.eu',
       'https://rpc-germany.eftg.eu',
       'https://rpc-luxembourg.eftg.eu',
       'https://rpc-romania.eftg.eu'
     ],
-    IMAGE_HOSTER : 'https://cdn.eftg.eu',
+    IMAGE_HOSTER : 'http://127.0.1.1/',
     ELASTIC : 'https://api.eftg.eu/pulsar/',
-    CDN : 'https://cdn.eftg.eu/',
+    CDN : 'http://127.0.1.1/',
     EFTG_HARDFORK_0_1 : false
   },
   'acceptance': {
     RPC_NODES : [
+      'http://192.168.56.2:8079',
       'https://api.blkcc.xyz'
     ],
-    IMAGE_HOSTER : 'https://cdn.acc.blkcc.xyz',
-    ELASTIC : 'https://api.blkcc.xyz/pulsar/',
-    CDN : 'https://cdn.acc.blkcc.xyz/',
+    IMAGE_HOSTER : 'http://127.0.1.1/',
+    ELASTIC : '0.0.0.0',
+    CDN : 'http://127.0.1.1',
     EFTG_HARDFORK_0_1 : false
   },
   'development': {
     RPC_NODES : [
+      'http://192.168.56.2:8079',
       'https://apidev.blkcc.xyz',
     ],
-    IMAGE_HOSTER : 'https://cdn.dev.blkcc.xyz',
-    ELASTIC : 'https://apidev.blkcc.xyz/pulsar/',
-    CDN : 'https://cdn.dev.blkcc.xyz/',
+    IMAGE_HOSTER : 'http://127.0.1.1/',
+    ELASTIC : '0.0.0.0',
+    CDN : 'http://127.0.1.1/',
     EFTG_HARDFORK_0_1 : true
   }
 }

@@ -135,6 +135,12 @@ async function newTransaction() {
   }
 }
 
+import member from "../dictionary/home_member_states.json"
+import id from "../dictionary/identifier.json"
+import tree from "../dictionary/class_subclass_tree.json"
+import lange from "../dictionary/lang.json"
+import servers from "../dictionary/server_config.json"
+
 async function loadDictionary() {
   var dictionary = {}
   var hms        = await axios.get(config.IMAGE_HOSTER + '/home_member_states.json')
@@ -142,6 +148,12 @@ async function loadDictionary() {
   var subclass   = await axios.get(config.IMAGE_HOSTER + '/class_subclass_tree.json')
   var lang       = await axios.get(config.IMAGE_HOSTER + '/lang.json')
   var server     = await axios.get(config.IMAGE_HOSTER + '/server_config.json')
+
+  var hms        = member
+  var identifier = id
+  var subclass   = tree
+  var lang       = lange
+  var server     = servers
 
   dictionary.hms        = hms.data.slice()
   dictionary.identifier = identifier.data.slice()

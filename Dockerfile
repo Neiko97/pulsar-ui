@@ -1,5 +1,5 @@
-FROM node:alpine as dependencies
-RUN apk add --no-cache --virtual .gyp python make g++
+FROM node:16-alpine as dependencies
+RUN apk add --no-cache --virtual .gyp python3 make g++
 
 ### Install build toolchain, install node deps and compile native add-ons
 WORKDIR /var/build

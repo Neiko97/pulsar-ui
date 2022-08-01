@@ -19,7 +19,7 @@ const config = {
       'https://api.blkcc.xyz'
     ],
     IMAGE_HOSTER : 'http://127.0.1.1/',
-    ELASTIC : '0.0.0.0',
+    ELASTIC : '',
     CDN : 'http://127.0.1.1',
     EFTG_HARDFORK_0_1 : false
   },
@@ -29,7 +29,7 @@ const config = {
       'https://apidev.blkcc.xyz',
     ],
     IMAGE_HOSTER : 'http://127.0.1.1/',
-    ELASTIC : '0.0.0.0',
+    ELASTIC : '',
     CDN : 'http://127.0.1.1/',
     EFTG_HARDFORK_0_1 : true
   }
